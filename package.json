@@ -1,11 +1,11 @@
 {
-  "name": "heroes-of-the-match-3",
+  "name": "STP-8298",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/heroes-of-the-match-3/",
+    "build": "vite build --base=/STP-8298/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
     "predeploy": "npm run build",

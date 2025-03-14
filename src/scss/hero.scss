@@ -1,0 +1,122 @@
+.hero {
+  @include media(mobile) {
+    background-image: url(../img/mobile/bg-main/bg-main-mobile.png);
+    border-bottom: 1px solid #183800;
+    @media (min-resolution: 192dpi) {
+      .hero {
+        background-image: url(../img/mobile/bg-main/bg-main-mobile@2x.png);
+      }
+    }
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-text-container {
+  @include media(mobile) {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-right: 8px;
+  }
+}
+
+.hero-title {
+  width: 173px;
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 100%;
+  letter-spacing: 0.08em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.hero-text {
+  width: 210px;
+  padding-left: 24px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 111%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-list {
+  list-style-type: disc;
+  padding-left: 34px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.google-play-button-container {
+  padding-left: 19px;
+  margin-top: 36px;
+}
+
+.google-play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #183800;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  width: 118px;
+  height: 34px;
+}
+
+.img-hero {
+  height: 23px;
+  width: 21px;
+}
+
+.text-google-play {
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+}
+
+.title-google-play {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+.text-google-play-container {
+  display: block;
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.phone-king-img {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 0;
+  object-fit: cover;
+  height: 174px;
+  max-width: 120px;
+}
+
+.phone-play-img {
+  height: 180px;
+  width: 90px;
+  margin-top: 120px;
+  z-index: 1;
+}
