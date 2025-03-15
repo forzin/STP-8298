@@ -1,17 +1,24 @@
 .hero {
-  @include media(mobile) {
-    background-image: url(../img/mobile/bg-main/bg-main-mobile.png);
-    border-bottom: 1px solid #183800;
-    @media (min-resolution: 192dpi) {
-      .hero {
-        background-image: url(../img/mobile/bg-main/bg-main-mobile@2x.png);
-      }
-    }
-  }
+  background-image: url(../img/mobile/bg-main/bg-main-mobile.png);
+  border-bottom: 1px solid #183800;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: url(../img/mobile/bg-main/bg-main-mobile@2x.png);
+    }
+  }
+  @include media(desktop) {
+    background-image: url(../img/laptop/bg-main/bg-main-laptop.png);
+    border-bottom: 1px solid #183800;
+    @media (min-resolution: 192dpi) {
+      .hero {
+        background-image: url(../img/laptop/bg-main/bg-main-laptop@2x.png);
+      }
+    }
+  }
 }
 
 .hero-container {
@@ -19,10 +26,14 @@
 }
 
 .hero-text-container {
-  @include media(mobile) {
-    padding-top: 25px;
-    padding-bottom: 10px;
-    margin-right: 8px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+
+  @include media(desktop) {
+    padding-top: 131px;
+    padding-bottom: 76px;
+    margin-right: 10px;
   }
 }
 
@@ -35,10 +46,17 @@
   letter-spacing: 0.08em;
   text-align: center;
   margin-bottom: 8px;
+
+  @include media(desktop) {
+    width: 668px;
+    font-size: 74px;
+    letter-spacing: 0.12em;
+    padding-left: 78px;
+  }
 }
 
 .hero-text {
-  width: 210px;
+  width: 570px;
   padding-left: 24px;
   font-style: italic;
   font-weight: 600;
@@ -46,6 +64,15 @@
   line-height: 111%;
   text-align: center;
   margin-bottom: 20px;
+
+  @include media(desktop) {
+    width: 620px;
+    font-weight: 700;
+    font-size: 25px;
+    padding-left: 78px;
+    letter-spacing: 0.05em;
+    margin-bottom: 45px;
+  }
 }
 
 .hero-list {
@@ -55,11 +82,25 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
+
+  @include media(desktop) {
+    width: 687px;
+    height: 175px;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding-left: 115px;
+  }
 }
 
 .google-play-button-container {
   padding-left: 19px;
   margin-top: 36px;
+
+  @include media(desktop) {
+    margin-top: 41px;
+    padding-left: 80px;
+  }
 }
 
 .google-play-button {
@@ -71,6 +112,11 @@
   border-radius: 15px;
   width: 118px;
   height: 34px;
+
+  @include media(desktop) {
+    width: 245px;
+    height: 62px;
+  }
 }
 
 .img-hero {
