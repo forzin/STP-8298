@@ -1,0 +1,41 @@
+.container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(mobile) {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  @include media(desktop) {
+    max-width: 1200px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.reviews-container {
+  background-image: url(../img/mobile/bg-main/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: url(../img/mobile/bg-main/bg-main-mobile@2x.png);
+    }
+  }
+  @include media(desktop) {
+    background-image: url(../img/laptop/bg-main/bg-main-laptop.png);
+    @media (min-resolution: 192dpi) {
+      .hero {
+        background-image: url(../img/laptop/bg-main/bg-main-laptop@2x.png);
+      }
+    }
+  }
+  @include media(mobile) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
