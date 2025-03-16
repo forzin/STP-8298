@@ -18,7 +18,7 @@
         <a class="google-play-button" href="">
           <img
             class="img-hero"
-            src="../img/mobile/logo/google-play-logo-mobile.png"
+            src="../img/laptop/logo/google-play-logo-laptop.png"
             alt="google play button"
           />
           <div class="text-google-play-container">
@@ -29,11 +29,21 @@
       </div>
     </div>
     <div class="img-container">
-      <img
-        class="phone-play-img"
-        src="../img/mobile/1x/phone-play-mobile.png"
-        alt=""
-      />
+      <picture>
+        <source
+          srcset="../img/mobile/1x/phone-play-mobile.png"
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="../img/laptop/1x/phone-play-laptop.png"
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="phone-play-img"
+          src="../img/laptop/1x/phone-play-laptop.png"
+          alt=""
+        />
+      </picture>
       <img
         class="phone-king-img"
         src="../img/mobile/1x/phone-king-mobile.png"

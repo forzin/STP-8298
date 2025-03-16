@@ -1,4 +1,8 @@
-.hero {
+.hero-container {
+  display: flex;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../img/mobile/bg-main/bg-main-mobile.png);
   border-bottom: 1px solid #183800;
   background-repeat: no-repeat;
@@ -13,6 +17,7 @@
   @include media(desktop) {
     background-image: url(../img/laptop/bg-main/bg-main-laptop.png);
     border-bottom: 1px solid #183800;
+    max-width: 1200px;
     @media (min-resolution: 192dpi) {
       .hero {
         background-image: url(../img/laptop/bg-main/bg-main-laptop@2x.png);
@@ -21,55 +26,53 @@
   }
 }
 
-.hero-container {
-  display: flex;
-}
-
 .hero-text-container {
-  padding-top: 25px;
-  padding-bottom: 10px;
-  margin-right: 10px;
-
+  @include media(mobile) {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
   @include media(desktop) {
     padding-top: 131px;
     padding-bottom: 76px;
-    margin-right: 10px;
   }
 }
 
 .hero-title {
-  width: 173px;
   padding-left: 30px;
   font-weight: 700;
-  font-size: 19px;
   line-height: 100%;
-  letter-spacing: 0.08em;
   text-align: center;
   margin-bottom: 8px;
+
+  @include media(mobile) {
+    width: 173px;
+    font-size: 19px;
+    letter-spacing: 0.08em;
+  }
 
   @include media(desktop) {
     width: 668px;
     font-size: 74px;
     letter-spacing: 0.12em;
-    padding-left: 78px;
   }
 }
 
 .hero-text {
-  width: 570px;
-  padding-left: 24px;
   font-style: italic;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 111%;
   text-align: center;
-  margin-bottom: 20px;
+
+  @include media(mobile) {
+    width: 220px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 111%;
+  }
 
   @include media(desktop) {
-    width: 620px;
+    width: 640px;
     font-weight: 700;
     font-size: 25px;
-    padding-left: 78px;
     letter-spacing: 0.05em;
     margin-bottom: 45px;
   }
@@ -77,11 +80,14 @@
 
 .hero-list {
   list-style-type: disc;
-  padding-left: 34px;
   font-style: italic;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
+
+  @include media(mobile) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    padding-left: 34px;
+  }
 
   @include media(desktop) {
     width: 687px;
@@ -89,59 +95,92 @@
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 0.05em;
-    padding-left: 115px;
   }
 }
 
 .google-play-button-container {
-  padding-left: 19px;
-  margin-top: 36px;
+  @include media(mobile) {
+    margin-top: 36px;
+    padding-left: 19px;
+  }
 
   @include media(desktop) {
     margin-top: 41px;
-    padding-left: 80px;
   }
 }
 
 .google-play-button {
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #183800;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  width: 118px;
-  height: 34px;
+
+  @include media(mobile) {
+    width: 118px;
+    height: 34px;
+    justify-content: center;
+  }
 
   @include media(desktop) {
     width: 245px;
     height: 62px;
+    justify-content: start;
+    padding: 7px 8px;
   }
 }
 
 .img-hero {
-  height: 23px;
-  width: 21px;
+  @include media(mobile) {
+    height: 23px;
+    width: 21px;
+  }
+
+  @include media(desktop) {
+    width: 43px;
+    height: 48px;
+    margin-right: 17px;
+  }
 }
 
 .text-google-play {
   font-weight: 500;
-  font-size: 10px;
-  letter-spacing: 0.05em;
   text-align: center;
   color: #fff;
+
+  @include media(mobile) {
+    font-size: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  @include media(desktop) {
+    font-family: 'Roboto';
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    padding-left: 5px;
+  }
 }
 
 .title-google-play {
   font-family: 'Roboto';
   font-weight: 400;
-  font-size: 16px;
   text-align: center;
   color: #fff;
+
+  @include media(mobile) {
+    font-size: 16px;
+  }
+
+  @include media(desktop) {
+    font-size: 28px;
+  }
 }
 
 .text-google-play-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .img-container {
@@ -161,8 +200,17 @@
 }
 
 .phone-play-img {
-  height: 180px;
-  width: 90px;
+  position: absolute;
   margin-top: 120px;
   z-index: 1;
+
+  @include media(mobile) {
+    height: 180px;
+    width: 90px;
+  }
+
+  @include media(desktop) {
+    height: 575px;
+    width: 290px;
+  }
 }
