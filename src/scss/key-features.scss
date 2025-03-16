@@ -61,3 +61,17 @@
     text-indent: 15px;
   }
 }
+
+.key-feauters-img-container {
+  position: relative;
+}
+
+.key-feauters-img {
+  position: absolute;
+  @include media(mobile) {
+    top: 0;
+    left: 28%;
+    transform: translateY(-45%);
+    transform: translateX(45);
+  }
+}
