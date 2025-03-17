@@ -1,17 +1,10 @@
-.container {
+.container-main-char {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 
-  @include media(mobile) {
-    padding-left: 19px;
-    padding-right: 19px;
-  }
-
   @include media(desktop) {
     max-width: 1200px;
-    padding-left: 80px;
-    padding-right: 80px;
   }
 }
 
@@ -36,7 +29,18 @@
   }
   @include media(mobile) {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 97px;
+  }
+}
+
+.bg-image {
+  @include media(mobile) {
+    min-width: 668px; /* Щоб div не стискався */
+    min-height: 351px;
+    background-image: url(../img/mobile/1x/game-comp-mobile.png);
+    background-position: -14px center;
+    background-size: 668px 351px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -44,5 +48,72 @@
   @include media(mobile) {
     width: 668px;
     height: 351px;
+  }
+}
+
+.main-char-desc-title {
+  @include media(mobile) {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.12em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.main-char-desc-list {
+  display: flex;
+  position: relative;
+  @include media(mobile) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 134%;
+    letter-spacing: 0.07em;
+  }
+}
+
+.main-char-desc-list-item {
+  width: 70px;
+  text-align: center;
+}
+
+.king-donuttan-position {
+  @include media(mobile) {
+    position: absolute;
+    top: 335px;
+    left: 21px;
+  }
+}
+
+.lady-tart-position {
+  @include media(mobile) {
+    position: absolute;
+    top: 376px;
+    left: 50px;
+  }
+}
+
+.sir-cupcake-position {
+  @include media(mobile) {
+    position: absolute;
+    top: 399px;
+    left: 128px;
+  }
+}
+
+.count-choco-position {
+  @include media(mobile) {
+    position: absolute;
+    top: 371px;
+    left: 214px;
+  }
+}
+
+.the-jelly-jester-position {
+  @include media(mobile) {
+    position: absolute;
+    top: 317px;
+    left: 242px;
   }
 }
