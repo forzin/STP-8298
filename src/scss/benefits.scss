@@ -287,6 +287,9 @@
     min-width: 324px;
     min-height: 193px;
     background-image: url(../img/mobile/1x/game-mobile.png);
+    @media (min-resolution: 192dpi) {
+      background-image: url(../img/mobile/2x/game-mobile@2x.png);
+    }
     background-position: -20px 10px;
     background-repeat: no-repeat;
     background-size: 324px 193px;
@@ -296,6 +299,9 @@
     min-width: 1056px;
     min-height: 596px;
     background-image: url(../img/laptop/1x/game-laptop.png);
+    @media (min-resolution: 192dpi) {
+      background-image: url(../img/laptop/2x/game-laptop@2x.png);
+    }
     background-position: center;
     background-size: 1056px 596px;
   }

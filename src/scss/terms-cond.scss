@@ -1,6 +1,9 @@
 .terms {
   max-width: 320px;
   background-image: url(../img/laptop/bg-secondary-pages/bg-secondary-laptop.png);
+  @media (min-resolution: 192dpi) {
+    background-image: url(../img/laptop/bg-secondary-pages/bg-secondary-laptop@2x.png);
+  }
   padding-bottom: 30px;
 
   @media (min-width: 1024px) {

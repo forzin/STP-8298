@@ -43,6 +43,9 @@
     min-width: 1200px;
     min-height: 720px;
     background-image: url(../img/laptop/1x/goblin-laptop.png);
+    @media (min-resolution: 192dpi) {
+      background-image: url(../img/laptop/2x/goblin-laptop@2x.png);
+    }
     background-position: -80px bottom;
     background-size: 1200px 805px;
     background-repeat: no-repeat;

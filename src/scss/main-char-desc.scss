@@ -41,6 +41,9 @@
     min-width: 668px;
     min-height: 351px;
     background-image: url(../img/mobile/1x/game-comp-mobile.png);
+    @media (min-resolution: 192dpi) {
+      background-image: url(../img/mobile/2x/game-comp-mobile@2x.png);
+    }
     background-position: -14px center;
     background-size: 668px 351px;
     background-repeat: no-repeat;
@@ -51,6 +54,9 @@
     min-width: 1231px;
     min-height: 400px;
     background-image: url(../img/laptop/1x/game-comp-laptop.png);
+    @media (min-resolution: 192dpi) {
+      background-image: url(../img/laptop/2x/game-comp-laptop@2x.png);
+    }
     background-position: 2px -485px;
     background-size: 2112px 1109px;
     background-repeat: no-repeat;
