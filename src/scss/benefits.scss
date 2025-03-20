@@ -1,0 +1,477 @@
+.container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(mobile) {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  @include media(desktop) {
+    max-width: 1200px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.benefits-container {
+  background-image: url(../img/mobile/bg-main/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: url(../img/mobile/bg-main/bg-main-mobile@2x.png);
+    }
+  }
+  @include media(mobile) {
+    padding-top: 40px;
+    padding-bottom: 168px;
+  }
+  @include media(desktop) {
+    background-image: url(../img/laptop/bg-main/bg-main-laptop.png);
+    padding-top: 131px;
+    padding-bottom: 240px;
+    @media (min-resolution: 192dpi) {
+      .hero {
+        background-image: url(../img/laptop/bg-main/bg-main-laptop@2x.png);
+      }
+    }
+  }
+}
+
+.benefits-title {
+  @include media(mobile) {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.12em;
+    text-align: center;
+    margin-bottom: 19px;
+  }
+
+  @include media(desktop) {
+    font-size: 50px;
+  }
+}
+
+.benefits-list {
+  @include media(mobile) {
+    position: relative;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 135%;
+  }
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.benefits-list-item {
+  @include media(mobile) {
+    width: 68px;
+    text-align: center;
+  }
+
+  @include media(desktop) {
+    width: 200px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.15em;
+  }
+}
+
+.storyline-position {
+  @include media(mobile) {
+    position: absolute;
+    top: 0;
+    left: 102px;
+  }
+
+  @include media(desktop) {
+    top: 56px;
+    left: 340px;
+  }
+}
+
+.storyline-position::after {
+  @include media(desktop) {
+    content: 'Help King Donuttan The Third reclaim his throne through sweet battles';
+    margin-top: 50px;
+    display: block;
+    width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+
+.combinations-position {
+  @include media(mobile) {
+    position: absolute;
+    text-align: center;
+    top: 28px;
+    left: 216px;
+  }
+
+  @include media(desktop) {
+    top: 34px;
+    left: 700px;
+  }
+}
+
+.combinations-position::after {
+  @include media(desktop) {
+    content: 'Match three or more sweets to unleash powerful effects';
+    margin-top: 26px;
+    display: block;
+    width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+
+.gameplay-position {
+  @include media(mobile) {
+    position: absolute;
+    text-align: center;
+    top: 44px;
+    left: 0;
+  }
+
+  @include media(desktop) {
+    top: 250px;
+    left: 20px;
+  }
+}
+
+.gameplay-position::after {
+  @include media(desktop) {
+    content: 'Classic match-3 fun with unique medieval-themed mechanics';
+    margin-top: 23px;
+    display: block;
+    width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+
+.events-position {
+  @include media(mobile) {
+    position: absolute;
+    text-align: center;
+    top: 175px;
+    left: 0;
+  }
+
+  @include media(desktop) {
+    top: 510px;
+    left: 80px;
+  }
+}
+
+.events-position::after {
+  @include media(desktop) {
+    content: 'New levels, challenges, and rewards keep the game fresh';
+    margin-top: 55px;
+    display: block;
+    width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+
+.characters-position {
+  @include media(mobile) {
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    left: 216px;
+  }
+
+  @include media(desktop) {
+    top: 370px;
+    left: 860px;
+  }
+}
+
+.characters-position::after {
+  @include media(desktop) {
+    content: 'Meet amusing heroes and allies on your journey';
+    margin-top: 21px;
+    display: block;
+    width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+
+.challenges-position {
+  @include media(mobile) {
+    position: absolute;
+    text-align: center;
+    top: 234px;
+    left: 203px;
+  }
+
+  @include media(desktop) {
+    top: 600px;
+    left: 715px;
+  }
+}
+
+.challenges-position::after {
+  @include media(desktop) {
+    content: 'Plan your moves wisely to defeat tricky opponents';
+    margin-top: 42px;
+    display: block;
+    width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+
+.visuals-position {
+  @include media(mobile) {
+    position: absolute;
+    text-align: center;
+    top: 274px;
+    left: 96px;
+  }
+
+  @include media(desktop) {
+    top: 630px;
+    left: 405px;
+  }
+}
+
+.visuals-position::after {
+  @include media(desktop) {
+    content: 'Beautifully designed medieval world with colorful effects';
+    margin-top: 49px;
+    display: block;
+    width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+}
+
+.bg-image-benefits {
+  @include media(mobile) {
+    min-width: 324px;
+    min-height: 193px;
+    background-image: url(../img/mobile/1x/game-mobile.png);
+    background-position: -20px 10px;
+    background-repeat: no-repeat;
+    background-size: 324px 193px;
+  }
+
+  @include media(mobile) {
+    min-width: 1056px;
+    min-height: 596px;
+    background-image: url(../img/laptop/1x/game-laptop.png);
+    background-position: center;
+    background-size: 1056px 596px;
+  }
+}
+
+.icon-arrow-left-start {
+  @include media(mobile) {
+    position: absolute;
+    top: 16px;
+    left: -90px;
+  }
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.icon-arrow-left-1 {
+  @include media(mobile) {
+    position: absolute;
+    top: -27px;
+    left: -51px;
+  }
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.icon-arrow-up {
+  @include media(mobile) {
+    position: absolute;
+    top: 58px;
+    left: 2px;
+  }
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.icon-arrow-down {
+  @include media(mobile) {
+    position: absolute;
+    top: -61px;
+    left: 28px;
+  }
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.icon-arrow-left {
+  @include media(mobile) {
+    position: absolute;
+    top: 60px;
+    left: 52px;
+  }
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.icon-arrow-down-left-1 {
+  @include media(mobile) {
+    position: absolute;
+    top: -48px;
+    left: 42px;
+  }
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.icon-arrow-down-left {
+  @include media(mobile) {
+    position: absolute;
+    top: -5px;
+    left: 70px;
+  }
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.second-arrow-right {
+  @include media(mobile) {
+    display: none;
+  }
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 180px;
+  }
+}
+
+.second-arrow-down {
+  @include media(mobile) {
+    display: none;
+  }
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 200px;
+  }
+}
+
+.second-arrow-down-left {
+  @include media(mobile) {
+    display: none;
+  }
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 875px;
+  }
+}
+
+.second-arrow-left {
+  @include media(mobile) {
+    display: none;
+  }
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 260px;
+    left: -266px;
+  }
+}
+
+.second-arrow-left-up {
+  @include media(mobile) {
+    display: none;
+  }
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: -150px;
+  }
+}
+
+.second-arrow-up {
+  @include media(mobile) {
+    display: none;
+  }
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: -57px;
+  }
+}
+
+.second-arrow-up-right {
+  @include media(mobile) {
+    display: none;
+  }
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: -485px;
+    left: -625px;
+  }
+}

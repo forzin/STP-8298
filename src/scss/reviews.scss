@@ -10,8 +10,8 @@
 
   @include media(desktop) {
     max-width: 1200px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -49,6 +49,10 @@
     text-align: center;
     margin-bottom: 48px;
   }
+
+  @include media(desktop) {
+    font-size: 50px;
+  }
 }
 
 .reviews-list {
@@ -56,18 +60,46 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  transform: rotate(-10deg);
+
+  @include media(desktop) {
+    justify-content: center;
+    gap: 24px;
+  }
 }
 
 .reviews-list-item {
   border-radius: 10px;
   background-color: #5f8313;
-  transform: rotate(-10deg);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   @include media(mobile) {
     width: 115px;
     height: 139px;
     padding-top: 11px;
     padding-left: 8px;
     padding-bottom: 9px;
+  }
+
+  @include media(desktop) {
+    width: 196px;
+    height: 197px;
+    padding-top: 11px;
+    padding-left: 8px;
+    padding-bottom: 9px;
+  }
+}
+
+.reviews-list-item:not(:first-child) {
+  padding-top: 25px;
+}
+
+.reviews-list-item:nth-child(5) {
+  @include media(mobile) {
+    display: none;
+  }
+
+  @include media(desktop) {
+    display: block;
   }
 }
 
@@ -79,27 +111,72 @@
 .john-bg {
   border: 1px solid #95d018;
   background-color: #64dc46;
+  margin-top: 85px;
 }
 
 .emily-bg {
   border: 1px solid #89d12e;
   background-color: #579c00;
+
+  @include media(desktop) {
+    margin-top: 30px;
+  }
 }
 
 .sophia-bg {
   border: 1px solid #95d018;
   background-color: #5f8313;
+  margin-top: 150px;
+
+  @include media(desktop) {
+    border: 1px solid #b3dc12;
+    background-color: #7e9e00;
+  }
+}
+
+.daniel-bg {
+  border: 1px solid #07f42e;
+  background-color: #05be23;
+  margin-top: 100px;
 }
 
 .first-margin {
   @include media(mobile) {
     margin-bottom: 8px;
   }
+
+  @include media(desktop) {
+    margin-bottom: 42px;
+  }
 }
 
 .second-margin {
   @include media(mobile) {
-    margin-bottom: 25px;
+    margin-bottom: 8px;
+  }
+
+  @include media(desktop) {
+    margin-bottom: 30px;
+  }
+}
+
+.third-margin {
+  @include media(mobile) {
+    margin-bottom: 24px;
+  }
+
+  @include media(desktop) {
+    margin-bottom: 30px;
+  }
+}
+
+.forth-margin {
+  @include media(mobile) {
+    margin-bottom: 24px;
+  }
+
+  @include media(desktop) {
+    margin-bottom: 45px;
   }
 }
 
@@ -108,6 +185,11 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 130%;
+  }
+
+  @include media(desktop) {
+    font-size: 16px;
+    letter-spacing: 0.1em;
   }
 }
 
@@ -119,5 +201,10 @@
     line-height: 100%;
     letter-spacing: 0.05em;
     text-align: start;
+  }
+
+  @include media(desktop) {
+    font-size: 22px;
+    line-height: 100%;
   }
 }

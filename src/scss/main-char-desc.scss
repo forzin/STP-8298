@@ -19,27 +19,39 @@
       background-image: url(../img/mobile/bg-main/bg-main-mobile@2x.png);
     }
   }
+  @include media(mobile) {
+    padding-top: 40px;
+    padding-bottom: 97px;
+  }
   @include media(desktop) {
     background-image: url(../img/laptop/bg-main/bg-main-laptop.png);
+    padding-top: 80px;
+    padding-bottom: 176px;
     @media (min-resolution: 192dpi) {
       .hero {
         background-image: url(../img/laptop/bg-main/bg-main-laptop@2x.png);
       }
     }
   }
-  @include media(mobile) {
-    padding-top: 40px;
-    padding-bottom: 97px;
-  }
 }
 
 .bg-image {
   @include media(mobile) {
-    min-width: 668px; /* Щоб div не стискався */
+    min-width: 668px;
     min-height: 351px;
     background-image: url(../img/mobile/1x/game-comp-mobile.png);
     background-position: -14px center;
     background-size: 668px 351px;
+    background-repeat: no-repeat;
+  }
+
+  @include media(desktop) {
+    position: relative;
+    min-width: 1231px;
+    min-height: 400px;
+    background-image: url(../img/laptop/1x/game-comp-laptop.png);
+    background-position: 2px -485px;
+    background-size: 2112px 1109px;
     background-repeat: no-repeat;
   }
 }
@@ -60,22 +72,41 @@
     text-align: center;
     margin-bottom: 20px;
   }
+
+  @include media(desktop) {
+    font-size: 50px;
+    margin-bottom: 35px;
+  }
 }
 
 .main-char-desc-list {
   display: flex;
-  position: relative;
+  justify-content: center;
+  gap: 40px;
   @include media(mobile) {
+    position: relative;
     font-weight: 600;
     font-size: 14px;
     line-height: 134%;
     letter-spacing: 0.07em;
   }
+
+  @include media(desktop) {
+    position: absolute;
+    top: 420px;
+    left: 45px;
+  }
 }
 
 .main-char-desc-list-item {
-  width: 70px;
+  width: 220px;
   text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+
+  @include media(desktop) {
+    display: block;
+  }
 }
 
 .king-donuttan-position {
@@ -83,6 +114,22 @@
     position: absolute;
     top: 335px;
     left: 21px;
+  }
+
+  @include media(desktop) {
+    position: static;
+  }
+}
+
+.king-donuttan-position::after {
+  @include media(desktop) {
+    content: 'The Third: The rightful ruler of the kingdom, determined to reclaim his throne.';
+    display: block;
+    font-size: 20px;
+    line-height: 112%;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 4px;
   }
 }
 
@@ -92,6 +139,22 @@
     top: 376px;
     left: 50px;
   }
+
+  @include media(desktop) {
+    position: static;
+    width: 160px;
+  }
+}
+
+.lady-tart-position::after {
+  @include media(desktop) {
+    content: ': A loyal strategist who helps plan sweet victories';
+    font-size: 20px;
+    line-height: 112%;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 4px;
+  }
 }
 
 .sir-cupcake-position {
@@ -99,6 +162,23 @@
     position: absolute;
     top: 399px;
     left: 128px;
+  }
+
+  @include media(desktop) {
+    position: static;
+    width: 165px;
+  }
+}
+
+.sir-cupcake-position::after {
+  @include media(desktop) {
+    content: 'A brave knight who uses powerful moves in battles.';
+    display: block;
+    font-size: 20px;
+    line-height: 112%;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 4px;
   }
 }
 
@@ -108,6 +188,24 @@
     top: 371px;
     left: 214px;
   }
+
+  @include media(desktop) {
+    position: static;
+    width: 175px;
+  }
+}
+
+.count-choco-position::after {
+  @include media(desktop) {
+    content: 'A mysterious ally with special match-3 abilities';
+    display: block;
+    font-size: 20px;
+    line-height: 112%;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-align: center;
+    margin-top: 4px;
+  }
 }
 
 .the-jelly-jester-position {
@@ -115,5 +213,23 @@
     position: absolute;
     top: 317px;
     left: 242px;
+  }
+
+  @include media(desktop) {
+    position: static;
+    width: 230px;
+  }
+}
+
+.the-jelly-jester-position::after {
+  @include media(desktop) {
+    content: 'A mischievous trickster who creates fun but challenging obstacles';
+    display: block;
+    font-size: 20px;
+    line-height: 112%;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-align: center;
+    margin-top: 4px;
   }
 }

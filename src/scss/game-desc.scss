@@ -21,41 +21,71 @@
       background-image: url(../img/mobile/bg-main/bg-main-mobile@2x.png);
     }
   }
+  @include media(mobile) {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
   @include media(desktop) {
     background-image: url(../img/laptop/bg-main/bg-main-laptop.png);
-    padding-top: 131px;
-    padding-bottom: 76px;
+    padding-top: 80px;
+    padding-bottom: 0px;
     @media (min-resolution: 192dpi) {
       .hero {
         background-image: url(../img/laptop/bg-main/bg-main-laptop@2x.png);
       }
     }
   }
-  @include media(mobile) {
-    padding-top: 40px;
-    padding-bottom: 50px;
+}
+
+.bg-image-goblin {
+  @include media(desktop) {
+    min-width: 1200px;
+    min-height: 720px;
+    background-image: url(../img/laptop/1x/goblin-laptop.png);
+    background-position: -80px bottom;
+    background-size: 1200px 805px;
+    background-repeat: no-repeat;
   }
 }
 
 .game-desc-title {
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.12em;
   @include media(mobile) {
-    font-weight: 700;
     font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0.12em;
     text-align: center;
     margin-bottom: 25px;
+  }
+
+  @include media(desktop) {
+    width: 396px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 74px;
   }
 }
 
 .game-desc-list {
+  font-style: italic;
+  font-weight: 700;
+
   @include media(mobile) {
     margin-right: auto;
     margin-left: auto;
-    font-style: italic;
-    font-weight: 700;
     font-size: 14px;
     line-height: 100%;
     text-indent: 15px;
+  }
+
+  @include media(desktop) {
+    width: 405px;
+    height: 504px;
+    text-indent: 28px;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.15em;
+    margin: 0;
   }
 }

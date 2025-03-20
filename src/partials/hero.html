@@ -1,5 +1,5 @@
 <section class="hero" id="hero">
-  <div class="hero-container">
+  <div class="hero-container container">
     <div class="hero-text-container">
       <h1 class="hero-title">Heroes of the Match 3</h1>
       <p class="hero-text">– A Sweet Adventure in a Medieval World!</p>
@@ -44,11 +44,23 @@
           alt=""
         />
       </picture>
-      <img
-        class="phone-king-img"
-        src="../img/mobile/1x/phone-king-mobile.png"
-        alt=""
-      />
+      <picture>
+        <source
+          srcset="../img/mobile/1x/phone-king-mobile.png"
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="../img/laptop/1x/phone-king-laptop.png"
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="phone-king-img"
+          src="../img/laptop/1x/phone-king-laptop.png"
+          alt=""
+          height="575"
+          width="315"
+        />
+      </picture>
     </div>
   </div>
 </section>
