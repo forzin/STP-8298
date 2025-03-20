@@ -1,3 +1,20 @@
+.container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(mobile) {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  @include media(desktop) {
+    max-width: 1200px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
 .privacy {
   max-width: 320px;
   background-image: url(../img/laptop/bg-secondary-pages/bg-secondary-laptop.png);

@@ -14,6 +14,7 @@
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  border-bottom: 1px solid #183800;
   @media (min-resolution: 192dpi) {
     .hero {
       background-image: url(../img/mobile/bg-main/bg-main-mobile@2x.png);
@@ -99,13 +100,21 @@
 }
 
 .main-char-desc-list-item {
-  width: 220px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 22px;
+  @include media(mobile) {
+    font-weight: 600;
+    width: 70px;
+    font-size: 14px;
+    line-height: 134%;
+    letter-spacing: 0.07em;
+    text-align: center;
+  }
 
   @include media(desktop) {
     display: block;
+    width: 220px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
   }
 }
 
@@ -142,7 +151,7 @@
 
   @include media(desktop) {
     position: static;
-    width: 160px;
+    width: 170px;
   }
 }
 
@@ -166,7 +175,7 @@
 
   @include media(desktop) {
     position: static;
-    width: 165px;
+    width: 175px;
   }
 }
 

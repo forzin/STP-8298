@@ -292,7 +292,7 @@
     background-size: 324px 193px;
   }
 
-  @include media(mobile) {
+  @include media(desktop) {
     min-width: 1056px;
     min-height: 596px;
     background-image: url(../img/laptop/1x/game-laptop.png);
