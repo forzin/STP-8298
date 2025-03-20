@@ -136,9 +136,6 @@
   @include media(mobile) {
     visibility: hidden;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    column-gap: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
@@ -157,9 +154,6 @@
 
 .nav-menu.active {
   @include media(mobile) {
-    display: flex;
-    flex-direction: column;
-    column-gap: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
@@ -170,5 +164,11 @@
     text-decoration: underline;
     opacity: 1;
     visibility: visible;
+  }
+}
+
+.menu-list-item:not(:last-child) {
+  @include media(mobile) {
+    margin-bottom: 10px;
   }
 }
