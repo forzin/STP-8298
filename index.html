@@ -26,10 +26,77 @@
 
     
     <script type="module" crossorigin src="/STP-8298/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/STP-8298/assets/styles-a048c846.css">
+    <link rel="stylesheet" href="/STP-8298/assets/styles-29f6e436.css">
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+  <div class="header-container">
+    <picture>
+        <source
+          srcset="/STP-8298/assets/logo-3-c68abc00.png "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="/STP-8298/assets/logo-2-2f619952.png "
+          media="(min-width: 1200px)"
+        />
+        <img class="img-header" src="/STP-8298/assets/logo-2-2f619952.png" alt="" width="110" height="110">
+    </picture>
+    <button type="button" id="burger" class="button-menu">
+      <svg class="icon-burger" width="24" height="28">
+        <use href="/STP-8298/assets/icons-484d80b6.svg#icon-Menu"></use>
+      </svg>
+    </button>
+    <nav class="nav-menu" id="menu">
+      <ul>
+        <li class="menu-list-item">
+          <a href="#hero">Home</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#benefits">Benefits</a>
+        </li>
+        <li class="menu-list-item description-width">
+          <a href="#game-desc">Game Description</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li class="menu-list-item features-width">
+          <a href="#key-feauters">Key Features</a>
+        </li>
+        <li class="menu-list-item characters-width">
+          <a href="#main-char-desc">Main Characters Description</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="#reviews">Review</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header-list">
+      <li class="header-list-item">
+        <a href="#hero">Home</a>
+      </li>
+      <li class="header-list-item">
+        <a href="#benefits">Benefits</a>
+      </li>
+      <li class="header-list-item description-width">
+        <a href="#game-desc">Game Description</a>
+      </li>
+      <li class="header-list-item">
+        <a href="#gallery">Gallery</a>
+      </li>
+      <li class="header-list-item features-width">
+        <a href="#key-feauters">Key Features</a>
+      </li>
+      <li class="header-list-item characters-width">
+        <a href="#main-char-desc">Main Characters Description</a>
+      </li>
+      <li class="header-list-item">
+        <a href="#reviews">Review</a>
+      </li>
+    </ul>
+  </div>
+</header>
 
     <section class="hero" id="hero">
   <div class="hero-container">
@@ -51,7 +118,7 @@
         <a class="google-play-button" href="">
           <img
             class="img-hero"
-            src="../img/laptop/logo/google-play-logo-laptop.png"
+            src="data:image/png;base64,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"
             alt="google play button"
           />
           <div class="text-google-play-container">
@@ -73,41 +140,128 @@
         />
         <img
           class="phone-play-img"
-          src="../img/laptop/1x/phone-play-laptop.png"
+          src="/STP-8298/assets/phone-play-laptop-da91ec00.png"
           alt=""
         />
       </picture>
-      <img
-        class="phone-king-img"
-        src="../img/mobile/1x/phone-king-mobile.png"
-        alt=""
-      />
+      <picture>
+        <source
+          srcset="/STP-8298/assets/phone-king-mobile-fb06329e.png "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="/STP-8298/assets/phone-king-laptop-7eea04de.png "
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="phone-king-img"
+          src="/STP-8298/assets/phone-king-laptop-7eea04de.png"
+          alt=""
+          height="575"
+          width="315"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+    <section class="benefits" id="benefits">
+  <div class="benefits-container container">
+    <h2 class="benefits-title">Benefits</h2>
+    <div class="bg-image-benefits">
+      <ul class="benefits-list">
+        <li class="benefits-list-item storyline-position">
+          Engaging Storyline
+          <svg class="icon-arrow-left-start" width="74" height="27">
+            <use href="/STP-8298/assets/icons-484d80b6.svg#arrow-left-start"></use>
+          </svg>
+          <svg class="second-arrow-right" width="185" height="115">
+            <use href="/STP-8298/assets/icons-bc2e3cf3.svg#arrow-right"></use>
+          </svg>
+        </li>
+        <li class="benefits-list-item combinations-position">
+          Delicious Combinations
+          <svg class="icon-arrow-left-1" width="57" height="50">
+            <use href="/STP-8298/assets/icons-484d80b6.svg#arrow-left-1"></use>
+          </svg>
+          <svg class="second-arrow-down" width="132" height="215">
+            <use href="/STP-8298/assets/icons-bc2e3cf3.svg#arrow-down"></use>
+          </svg>
+        </li>
+        <li class="benefits-list-item gameplay-position">
+          Exciting Match-3 Gameplay
+          <svg class="icon-arrow-up" width="40" height="62">
+            <use href="/STP-8298/assets/icons-484d80b6.svg#arrow-up"></use>
+          </svg>
+          <svg class="second-arrow-down-left" width="131" height="156">
+            <use href="/STP-8298/assets/icons-bc2e3cf3.svg#arrow-down-left"></use>
+          </svg>
+        </li>
+        <li class="benefits-list-item characters-position">
+          Charming Characters
+          <svg class="icon-arrow-down" width="55" height="63">
+            <use href="/STP-8298/assets/icons-484d80b6.svg#arrow-down"></use>
+          </svg>
+          <svg class="second-arrow-left" width="145" height="84">
+            <use href="/STP-8298/assets/icons-bc2e3cf3.svg#arrow-left"></use>
+          </svg>
+        </li>
+        <li class="benefits-list-item events-position">
+          Regular Updates & Events
+          <svg class="icon-arrow-left" width="35" height="49">
+            <use href="/STP-8298/assets/icons-484d80b6.svg#arrow-left"></use>
+          </svg>
+          <svg class="second-arrow-up" width="140" height="229">
+            <use href="/STP-8298/assets/icons-bc2e3cf3.svg#arrow-up"></use>
+          </svg>
+        </li>
+        <li class="benefits-list-item challenges-position">
+          Strategic Challenges
+          <svg class="icon-arrow-down-left-1" width="34" height="42">
+            <use href="/STP-8298/assets/icons-484d80b6.svg#arrow-down-left-1"></use>
+          </svg>
+          <svg class="second-arrow-up-right" width="252" height="131">
+            <use href="/STP-8298/assets/icons-bc2e3cf3.svg#arrow-up-right"></use>
+          </svg>
+        </li>
+        <li class="benefits-list-item visuals-position">
+          Stunning Visuals
+          <svg class="icon-arrow-down-left" width="40" height="28">
+            <use href="/STP-8298/assets/icons-484d80b6.svg#arrow-down-left"></use>
+          </svg>
+          <svg class="second-arrow-left-up" width="167" height="123">
+            <use href="/STP-8298/assets/icons-bc2e3cf3.svg#arrow-left-up"></use>
+          </svg>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
 
     <section class="game-desc" id="game-desc">
   <div class="game-desc-container container">
-    <h2 class="game-desc-title">Game Description</h2>
-    <ul class="game-desc-list">
-      <li>
-        Welcome to Heroes of Match 3, an exciting match-3 adventure set in a
-        medieval world full of sweets and challenges!
-      </li>
-      <li>
-        Dive into a magical kingdom, match delicious treats, and help King
-        Donuttan The Third reclaim his throne.
-      </li>
-      <li>
-        Each level presents strategic puzzles, where you must combine sweets to
-        defeat enemies and progress through the royal saga.
-      </li>
-      <li>
-        With engaging characters, special power-ups, and challenging levels,
-        this is not just another match-3 game—it’s an epic quest!
-      </li>
-      <li>Who knows, maybe YOU will become the next ruler of the kingdom?</li>
-    </ul>
+    <div class="bg-image-goblin">
+      <h2 class="game-desc-title">Game Description</h2>
+      <ul class="game-desc-list">
+        <li>
+          Welcome to Heroes of Match 3, an exciting match-3 adventure set in a
+          medieval world full of sweets and challenges!
+        </li>
+        <li>
+          Dive into a magical kingdom, match delicious treats, and help King
+          Donuttan The Third reclaim his throne.
+        </li>
+        <li>
+          Each level presents strategic puzzles, where you must combine sweets
+          to defeat enemies and progress through the royal saga.
+        </li>
+        <li>
+          With engaging characters, special power-ups, and challenging levels,
+          this is not just another match-3 game—it’s an epic quest!
+        </li>
+        <li>Who knows, maybe YOU will become the next ruler of the kingdom?</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -115,103 +269,103 @@
   <div class="gallery-container container">
     <h2 class="gallery-title">Gallery</h2>
     <ul class="gallery-list">
-      <li>
+      <li class="gallery-list-item">
         <picture>
           <source
-            srcset="../img/mobile/gallery/1x/picture1-mobile.png"
+            srcset="/STP-8298/assets/picture1-mobile-b3b5ece6.png "
             media="(max-width: 1199px)"
           />
           <source
-            srcset="../img/laptop/gallery/1x/picture1-laptop.png"
+            srcset="/STP-8298/assets/picture1-laptop-16e490bc.png "
             media="(min-width: 1200px)"
           />
           <img
-            src="../img/laptop/gallery/1x/picture1-laptop.png"
+            src="/STP-8298/assets/picture1-laptop-16e490bc.png"
             alt=""
             class="img-gallery"
           />
         </picture>
       </li>
-      <li>
+      <li class="gallery-list-item">
         <picture>
           <source
-            srcset="../img/mobile/gallery/1x/picture2-mobile.png"
+            srcset="/STP-8298/assets/picture2-mobile-41b8e1fc.png "
             media="(max-width: 1199px)"
           />
           <source
-            srcset="../img/laptop/gallery/1x/picture2-laptop.png"
+            srcset="/STP-8298/assets/picture2-laptop-54516c48.png "
             media="(min-width: 1200px)"
           />
           <img
-            src="../img/laptop/gallery/1x/picture2-laptop.png"
+            src="/STP-8298/assets/picture2-laptop-54516c48.png"
             alt=""
             class="img-gallery"
           />
         </picture>
       </li>
-      <li>
+      <li class="gallery-list-item">
         <picture>
           <source
-            srcset="../img/mobile/gallery/1x/picture3-mobile.png"
+            srcset="/STP-8298/assets/picture3-mobile-0a6c599f.png "
             media="(max-width: 1199px)"
           />
           <source
-            srcset="../img/laptop/gallery/1x/picture3-laptop.png"
+            srcset="/STP-8298/assets/picture3-laptop-2258530f.png "
             media="(min-width: 1200px)"
           />
           <img
-            src="../img/laptop/gallery/1x/picture3-laptop.png"
+            src="/STP-8298/assets/picture3-laptop-2258530f.png"
             alt=""
             class="img-gallery"
           />
         </picture>
       </li>
-      <li>
+      <li class="gallery-list-item">
         <picture>
           <source
-            srcset="../img/mobile/gallery/1x/picture4-mobile.png"
+            srcset="/STP-8298/assets/picture4-mobile-60f3b7b0.png "
             media="(max-width: 1199px)"
           />
           <source
-            srcset="../img/laptop/gallery/1x/picture4-laptop.png"
+            srcset="/STP-8298/assets/picture4-laptop-be330121.png "
             media="(min-width: 1200px)"
           />
           <img
-            src="../img/laptop/gallery/1x/picture4-laptop.png"
+            src="/STP-8298/assets/picture4-laptop-be330121.png"
             alt=""
             class="img-gallery"
           />
         </picture>
       </li>
-      <li>
+      <li class="gallery-list-item">
         <picture>
           <source
-            srcset="../img/mobile/gallery/1x/picture5-mobile.png"
+            srcset="/STP-8298/assets/picture5-mobile-be0218b9.png "
             media="(max-width: 1199px)"
           />
           <source
-            srcset="../img/laptop/gallery/1x/picture5-laptop.png"
+            srcset="/STP-8298/assets/picture5-laptop-8b6378e4.png "
             media="(min-width: 1200px)"
           />
           <img
-            src="../img/laptop/gallery/1x/picture5-laptop.png"
+            src="/STP-8298/assets/picture5-laptop-8b6378e4.png"
             alt=""
             class="img-gallery"
           />
         </picture>
       </li>
-      <li>
+      <li class="gallery-list-item">
         <picture>
           <source
-            srcset="../img/mobile/gallery/1x/picture6-mobile.png"
+            srcset="/STP-8298/assets/picture6-mobile-8038455a.png "
             media="(max-width: 1199px)"
           />
           <source
-            srcset="../img/laptop/gallery/1x/picture6-laptop.png"
+            srcset="/STP-8298/assets/picture6-laptop-9560c8d9.png "
             media="(min-width: 1200px)"
           />
           <img
-            src="../img/laptop/gallery/1x/picture6-laptop.png"
+            src="/STP-8298/assets/picture6-laptop-9560c8d9.png"
             alt=""
             class="img-gallery"
           />
@@ -255,15 +409,15 @@
     <div class="key-feauters-img-container">
       <picture>
         <source
-          srcset="../img/mobile/1x/goblin-purple-mobile.png"
+          srcset="/STP-8298/assets/goblin-purple-mobile-c2e13e99.png "
           media="(max-width: 1199px)"
         />
         <source
-          srcset="../img/laptop/1x/goblin-purple-laptop.png"
+          srcset="/STP-8298/assets/goblin-purple-laptop-c910d9cd.png "
           media="(min-width: 1200px)"
         />
         <img
-          src="../img/laptop/1x/goblin-purple-laptop.png"
+          src="/STP-8298/assets/goblin-purple-laptop-c910d9cd.png"
           alt=""
           class="key-feauters-img"
         />
@@ -307,23 +461,30 @@
         <h3 class="reviews-item-title">Alice M</h3>
       </li>
       <li class="reviews-list-item john-bg">
-        <p class="reviews-item-text first-margin">
+        <p class="reviews-item-text second-margin">
           The storyline makes this game so much more engaging than typical
           puzzle games
         </p>
         <h3 class="reviews-item-title">John T</h3>
       </li>
       <li class="reviews-list-item emily-bg">
-        <p class="reviews-item-text second-margin">
+        <p class="reviews-item-text third-margin">
           I love the characters and the sweet-themed world! Super addictive!
         </p>
         <h3 class="reviews-item-title">Emily K</h3>
       </li>
       <li class="reviews-list-item sophia-bg">
-        <p class="reviews-item-text second-margin">
-          The levels get more challenging, but that just makes it more fun!
+        <p class="reviews-item-text forth-margin">
+          The levels get<br />
+          more challenging, but that just makes it more fun!
         </p>
         <h3 class="reviews-item-title">Sophia L</h3>
+      </li>
+      <li class="reviews-list-item daniel-bg">
+        <p class="reviews-item-text forth-margin">
+          A great mix of strategy and casual fun. Can’t stop playing!
+        </p>
+        <h3 class="reviews-item-title">Daniel R</h3>
       </li>
     </ul>
   </div>
