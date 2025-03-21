@@ -1,5 +1,7 @@
 .privacy{
   max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url(../img/laptop/bg-secondary-pages/bg-secondary-laptop.png);
   padding-bottom: 30px;
   @include media(desktop) {
