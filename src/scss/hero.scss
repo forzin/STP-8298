@@ -208,15 +208,15 @@
   position: absolute;
   z-index: 0;
   object-fit: cover;
+  transform: rotate(-16deg);
   @include media(mobile) {
     height: 174px;
-    width: 120px;
-    top: 110px;
-    left: 30px;
+    width: 90px;
+    top: 75px;
+    left: 35px;
   }
 
   @include media(desktop) {
-    transform: rotate(-16deg);
     height: 575px;
     width: 290px;
     top: 103px;
@@ -226,16 +226,17 @@
 
 .phone-play-img {
   position: absolute;
-  margin-top: 201px;
   z-index: 1;
 
   @include media(mobile) {
     height: 180px;
     width: 90px;
+    margin-top: 164px;
   }
 
   @include media(desktop) {
     height: 575px;
     width: 290px;
+    margin-top: 201px;
   }
 }
